@@ -14,7 +14,7 @@ import {
   ShieldCheck,
   X,
 } from 'lucide-react'
-import { achievements, credentials, experience, focusAreas, profile, stats } from './content'
+import { achievements, assetUrl, credentials, experience, focusAreas, profile, stats } from './content'
 
 const navItems = [
   { label: 'Profile', href: '#profile' },
@@ -242,7 +242,7 @@ function App() {
             <div className="visual-orbit orbit-one" aria-hidden="true" />
             <div className="visual-orbit orbit-two" aria-hidden="true" />
             <div className="portrait-frame">
-              <img src="/assets/headshot.webp" alt="Dylan Tsai in professional attire" />
+              <img src={assetUrl('headshot.webp')} alt="Dylan Tsai in professional attire" />
             </div>
             <div className="identity-card">
               <ShieldCheck size={18} aria-hidden="true" />

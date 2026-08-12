@@ -1,3 +1,5 @@
+export const assetUrl = (fileName: string) => `${import.meta.env.BASE_URL}assets/${fileName}`
+
 export const profile = {
   name: 'Dylan Tsai',
   role: 'Aspiring SOC Analyst',
@@ -70,7 +72,7 @@ export const achievements = [
     title: 'Sentinel Challenge at BrainHack 2026',
     result: '1st Runner-Up',
     description: 'Team “mangos” placed 1st Runner-Up in the Sentinel Challenge CTF.',
-    image: '/assets/brainhack.webp',
+    image: assetUrl('brainhack.webp'),
     alt: 'Team photo from the Sentinel Challenge at BrainHack 2026',
   },
   {
@@ -78,7 +80,7 @@ export const achievements = [
     title: 'Sentinel Cyber Sports Day CTF',
     result: '5th Place',
     description: 'A team placement in a Polytechnic and ITE CTF challenge.',
-    image: '/assets/cyber-sports.webp',
+    image: assetUrl('cyber-sports.webp'),
     alt: 'Team photo after receiving fifth place at Sentinel Cyber Sports Day',
   },
 ]
